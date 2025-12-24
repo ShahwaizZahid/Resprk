@@ -11,24 +11,16 @@ export default function TechnologyCards2() {
             className="h-full w-full object-cover"
           />
         </div>
-
-       
       </div>
- <div className="absolute bottom-12 left-6 flex items-end gap-3">
+      <div className="absolute bottom-12 left-6 flex items-end gap-3">
         <div className=" rounded-xl">
-          
-        <h2 className="text-4xl font-light text-white">
-          Global E-Waste
-        </h2>
+          <h2 className="text-4xl font-light text-white">Global E-Waste</h2>
 
-        <p className="mt-4 w-66 text-zinc-400  leading-relaxed">
-      The UK generates 1.6 million tonnes of e-waste every year.
-        </p>
+          <p className="mt-4 w-66 text-zinc-400  leading-relaxed">
+            The UK generates 1.6 million tonnes of e-waste every year.
+          </p>
         </div>
-
-       
       </div>
-      
     </div>
   );
 }

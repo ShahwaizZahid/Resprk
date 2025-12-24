@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { AvatarGroup } from "./AvatarGroup";
 
 type GrowingCardProps = {
   title: React.ReactNode;
@@ -39,20 +40,41 @@ export default function GrowingCard({
         {description}
       </p>
 
-      <div className="w-72.5 h-42">
-        <Image
-          src={imageSrc}
-          alt={
-            typeof imageAlt === "string"
-              ? imageAlt
-              : typeof title === "string"
-              ? title
-              : ""
-          }
-          width={290}
-          height={168}
-        />
-      </div>
+  {bgColor === "black" ? (
+  <AvatarGroup />
+) : bgColor === "#C8FF4B" ? (
+  <div className="w-72.5 h-42 overflow-hidden rounded-full">
+     <Image
+     className="rounded-full"
+      src={imageSrc}
+      alt={
+        typeof imageAlt === "string"
+          ? imageAlt
+          : typeof title === "string"
+          ? title
+          : ""
+      }
+      width={290}
+      height={168}
+    />
+  </div>
+) : (
+  <div className="w-72.5 h-42">
+    <Image
+      src={imageSrc}
+      alt={
+        typeof imageAlt === "string"
+          ? imageAlt
+          : typeof title === "string"
+          ? title
+          : ""
+      }
+      width={290}
+      height={168}
+    />
+  </div>
+)}
+
     </div>
   );
 }

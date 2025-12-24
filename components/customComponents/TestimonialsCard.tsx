@@ -1,14 +1,14 @@
-import React from 'react'
-import { Avatar, AvatarImage } from '../ui/avatar'
+import React from "react";
+import { Avatar, AvatarImage } from "../ui/avatar";
 
 interface TestimonialCardProps {
-  headline: React.ReactNode
-  quote: React.ReactNode
-  name: string
-  title?: string
-  avatarSrc?: string
-  bgColor?: string
-  textColor?: string
+  headline: React.ReactNode;
+  quote: React.ReactNode;
+  name: string;
+  title?: string;
+  avatarSrc?: string;
+  bgColor?: string;
+  textColor?: string;
 }
 
 export default function TestimonialCard({
@@ -17,8 +17,8 @@ export default function TestimonialCard({
   name,
   title,
   avatarSrc,
-  bgColor = 'white',
-  textColor = 'black',
+  bgColor = "white",
+  textColor = "black",
 }: TestimonialCardProps) {
   return (
     <div
@@ -53,5 +53,5 @@ export default function TestimonialCard({
         </div>
       </div>
     </div>
-  )
+  );
 }

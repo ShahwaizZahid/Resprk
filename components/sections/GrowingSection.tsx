@@ -1,14 +1,14 @@
-'use client';
+"use client";
 import Image from "next/image";
 import GrowingCard from "../customComponents/GrowingCard";
-import { useEffect, useState, } from "react";
+import { useEffect, useState } from "react";
 
 export default function GrowingSection() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
-    handleResize(); 
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -39,7 +39,7 @@ export default function GrowingSection() {
         <GrowingCard
           title="Education"
           description="Reliable tech that supports learning and sustainability."
-          imageSrc="/images/growing-section/growing-section-image-1.svg"
+          imageSrc="/images/growing-section/growing-section-image-1.png"
           rotate={isMobile ? 0 : -15}
           bgColor="#C8FF4B"
           marginTop={isMobile ? "0" : "100px"}

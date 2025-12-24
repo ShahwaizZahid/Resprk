@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "../ui/button"; // shadcn button
+import { Button } from "../ui/button"; 
 import { FaArrowDown } from "react-icons/fa";
 const technologySolutionsData = [
             {
@@ -66,23 +66,25 @@ export default function TechnologySolutions() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-10 mt-6 md:mt-10 border-b-2 border-dotted border-gray-500 pb-6">
-        <div className="flex justify-center items-center font-light text-[60px] md:text-[100.72px] leading-27.5 md:leading-[173.11px] tracking-[-0.04em] w-full md:w-auto">
+      <div className="flex flex-col md:flex-row  h-fit items-center justify-between  md:gap-10   border-b-2 border-dotted border-gray-500 ">
+        <div className=" font-light text-[60px] pl-6 md:text-[100.72px] leading-27.5 md:leading-[173.11px] tracking-[-0.04em] w-full md:w-auto">
           45%
         </div>
 
-        <div className="w-full md:w-105 text-sm md:text-[18px] leading-5 md:leading-6 tracking-[-0.04em] font-light">
+        <div className="w-full flex pl-6 justify-center items-center md:w-105 text-sm sm:px-6 md:text-[18px] leading-5 md:leading-6 tracking-[-0.04em] font-light">
           We provide a comprehensive range of technology solutions for businesses and individuals. Our inventory is carefully graded to provide clarity and transparency, from pristine to excellent value.
         </div>
-
-        <div className=" w-full md:w-146.75 h-40 md:h-full relative">
-          <Image
-            src="/images/technology-solution/technology-solution-img-5.svg"
-            alt="Laptop"
-            fill
-            className="object-contain w-full h-full"
-          />
+       <div className="flex justify-center items-center w-full md:w-auto">
+          <div className="relative w-full md:w-146.75 h-48 md:h-41.75">
+            <Image
+              src="/images/technology-solution/technology-solution-img-5.webp"
+              alt="Laptop"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
+
       </div>
     </section>
   );
