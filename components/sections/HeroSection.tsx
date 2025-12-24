@@ -9,7 +9,7 @@ export default function HeroSection() {
       <main className="flex-1 flex flex-col justify-center px-5 sm:px-10 md:px-20 lg:px-44">
         <div className="font-semibold tracking-[-0.04em]">
           <div
-            className="flex flex-wrap items-center gap-2 h-30.5
+            className="flex flex-wrap items-center gap-2
                     text-4xl sm:text-5xl md:text-7xl lg:text-[122px]
                     leading-tight lg:leading-35"
           >
@@ -25,8 +25,9 @@ export default function HeroSection() {
           </div>
 
           <div
-            className="flex flex-wrap items-center gap-2 h-30.5
-                    text-4xl sm:text-5xl md:text-7xl lg:text-[122px]"
+            className="flex flex-wrap items-center gap-2 
+                    text-4xl sm:text-5xl md:text-7xl lg:text-[122px]
+                    leading-tight"
           >
             <span>Technology</span>
 
@@ -40,9 +41,9 @@ export default function HeroSection() {
           </div>
 
           <div
-            className="
+            className="mt-2
                    text-4xl sm:text-5xl md:text-7xl lg:text-[122px]
-                    "
+                    leading-tight"
           >
             Sustainable Future
           </div>
