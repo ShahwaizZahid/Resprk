@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Logos() {
   return (
     <div className="flex justify-center   w-28.25 h-28.25 rounded-full bg-[#FF6A46] relative overflow-hidden">

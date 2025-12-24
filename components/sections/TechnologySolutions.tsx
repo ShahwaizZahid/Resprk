@@ -32,7 +32,7 @@ export default function TechnologySolutions() {
             <h2 className="text-3xl md:text-4xl font-bold md:w-67.5">
               Tailored Technology Solutions
             </h2>
-            <Button className="py-3 md:py-6 bg-white w-full md:w-61 text-gray-500 border border-gray-500 flex justify-center items-center gap-2">
+            <Button className="py-3 md:py-6 bg-white w-fit md:w-61 text-gray-500 border border-gray-500 flex justify-center items-center gap-2">
               Schedule a free call <FaArrowDown />
             </Button>
           </div>

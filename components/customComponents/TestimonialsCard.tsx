@@ -1,14 +1,14 @@
-import React from "react";
-import { Avatar, AvatarImage } from "../ui/avatar";
+import React from 'react'
+import { Avatar, AvatarImage } from '../ui/avatar'
 
 interface TestimonialCardProps {
-  headline: React.ReactNode;
-  quote: React.ReactNode;
-  name: string;
-  title?: string;
-  avatarSrc?: string;
-  bgColor?: string;
-  textColor?: string;
+  headline: React.ReactNode
+  quote: React.ReactNode
+  name: string
+  title?: string
+  avatarSrc?: string
+  bgColor?: string
+  textColor?: string
 }
 
 export default function TestimonialCard({
@@ -17,24 +17,39 @@ export default function TestimonialCard({
   name,
   title,
   avatarSrc,
-  bgColor = "white",
-  textColor = "black",
+  bgColor = 'white',
+  textColor = 'black',
 }: TestimonialCardProps) {
   return (
     <div
-      className={`w-125 h-110.75 flex flex-col justify-between p-10  rounded-3xl`}
+      className="
+        w-full max-w-120.75 h-auto p-6 rounded-2xl
+        flex flex-col justify-between
+        md:w-125 md:h-110.75 md:p-10 md:rounded-3xl
+      "
       style={{ backgroundColor: bgColor, color: textColor }}
     >
-      <div className="w-[320px] font-medium text-[32px] leading-13.75 tracking-[-0.04em]">
+      <div
+        className="
+          w-full font-medium text-[22px] leading-7 tracking-[-0.04em]
+          md:w-[320px] md:text-[32px] md:leading-13.75
+        "
+      >
         {headline}
       </div>
 
-      <p className="w-100 font-normal text-[20px] leading-7.5 tracking-[0em]">
+      <p
+        className="
+          w-full font-normal text-[16px] leading-6 mt-4
+          md:w-100 md:text-[20px] md:leading-7.5
+        "
+      >
         {quote}
       </p>
 
-      <div className="flex items-center gap-6">
-        <Avatar className="w-12.5 h-12.5">
+      {/* Footer */}
+      <div className="flex items-center gap-4 md:gap-6 mt-6">
+        <Avatar className="w-10 h-10 md:w-12.5 md:h-12.5">
           {avatarSrc ? (
             <AvatarImage src={avatarSrc} alt={name} />
           ) : (
@@ -43,15 +58,27 @@ export default function TestimonialCard({
         </Avatar>
 
         <div>
-          <div className="font-space-grotesk font-normal text-[18px] leading-7.5 tracking-[0em]">
+          <div
+            className="
+              font-space-grotesk font-normal text-[16px] leading-6
+              md:text-[18px] md:leading-7.5
+            "
+          >
             {name}
           </div>
 
-          <p className="font-normal text-[18px] leading-7.5 tracking-[0em]">
-            {title}
-          </p>
+          {title && (
+            <p
+              className="
+                font-normal text-[14px] leading-5
+                md:text-[18px] md:leading-7.5
+              "
+            >
+              {title}
+            </p>
+          )}
         </div>
       </div>
     </div>
-  );
+  )
 }
