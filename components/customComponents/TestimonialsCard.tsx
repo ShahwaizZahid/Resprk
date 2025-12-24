@@ -47,7 +47,6 @@ export default function TestimonialCard({
         {quote}
       </p>
 
-      {/* Footer */}
       <div className="flex items-center gap-4 md:gap-6 mt-6">
         <Avatar className="w-10 h-10 md:w-12.5 md:h-12.5">
           {avatarSrc ? (

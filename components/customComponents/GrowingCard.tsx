@@ -37,7 +37,6 @@ export default function GrowingCard({
         md:max-w-82.5 md:h-105 md:rounded-2xl
       "
     >
-      {/* Text */}
       <div className="flex flex-col items-center pt-4 md:pt-6 w-full">
         <div
           className="
@@ -59,7 +58,6 @@ export default function GrowingCard({
         </p>
       </div>
 
-      {/* Media */}
       <div className="pt-6 md:pt-12.5">
         {bgColor === "black" ? (
           <AvatarGroup />
