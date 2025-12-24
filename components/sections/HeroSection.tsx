@@ -25,9 +25,8 @@ export default function HeroSection() {
           </div>
 
           <div
-            className="flex flex-wrap items-center gap-2 mt-2
-                    text-4xl sm:text-5xl md:text-7xl lg:text-[122px]
-                    leading-tight"
+            className="flex flex-wrap items-center gap-2 
+                    text-4xl sm:text-5xl md:text-7xl lg:text-[122px]"
           >
             <span>Technology</span>
 
@@ -41,9 +40,9 @@ export default function HeroSection() {
           </div>
 
           <div
-            className="mt-2
+            className="
                    text-4xl sm:text-5xl md:text-7xl lg:text-[122px]
-                    leading-tight"
+                    "
           >
             Sustainable Future
           </div>
