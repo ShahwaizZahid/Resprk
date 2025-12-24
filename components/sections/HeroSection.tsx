@@ -51,12 +51,12 @@ export default function HeroSection() {
       </main>
 
       <footer className="flex flex-col md:flex-row w-full border-t border-white">
-        <div className="flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-1/2 border-b md:border-b-0 md:border-r border-white px-5 sm:px-10 py-6">
-          <Button className="bg-white text-black w-full md:w-auto px-6 py-3 md:px-10 md:py-6">
+        <div className="flex flex-col  flex-wrap md:flex-row gap-4 md:gap-6 w-full md:w-1/2 border-b md:border-b-0 md:border-r border-white px-5 sm:px-5 py-6">
+          <Button className="bg-white text-black w-fit  px-6 py-3 md:px-10 md:py-6">
             Book a Consultation
           </Button>
 
-          <Button className="w-full md:w-auto py-3 md:py-6 px-4 md:px-8 bg-black border border-white rounded-4xl shadow-[inset_6px_0_12px_rgba(255,255,255,0.6)] flex items-center justify-center gap-2">
+          <Button className="w-44.75  py-3 md:py-6 px-4 md:px-8 bg-black border border-white rounded-4xl shadow-[inset_6px_0_12px_rgba(255,255,255,0.6)] flex items-center justify-center gap-2">
             <span>Get a Quote</span> <FaArrowRight />
           </Button>
         </div>
