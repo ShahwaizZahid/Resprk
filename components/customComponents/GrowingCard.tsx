@@ -30,50 +30,57 @@ export default function GrowingCard({
         marginTop: marginTop,
         transform: `rotate(${rotate}deg)`,
       }}
-      className={`w-82.5 text-${textColor}  overflow-hidden h-105 rounded-2xl flex flex-col justify-between items-center p-10`}
+      className={`w-82.5 text-${textColor}  overflow-hidden h-105 rounded-2xl flex flex-col  items-center `}
     >
-      <div className="font-space-grotesk font-medium text-[32px] leading-13.75 tracking-[-0.04em]">
-        {title}
+      
+      <div className=" flex  justify-center
+       items-center w-full flex-col pt-6 ">
+        <div className=" w-23.5 font-medium text-[32px] leading-13.75 tracking-[-0.04em] items-center flex justify-center">
+          {title}
+        </div>
+
+        <p className="font-light text-[18px] w-48.5 leading-6   text-center">
+          {description}
+        </p>
       </div>
 
-      <p className="font-light text-[18px] w-48.5 leading-6 p-4 tracking-[-0.03em] text-center">
-        {description}
-      </p>
+<div className="pt-12.5">
 
-  {bgColor === "black" ? (
-  <AvatarGroup />
-) : bgColor === "#C8FF4B" ? (
-  <div className="w-72.5 h-42 overflow-hidden rounded-full">
-     <Image
-     className="rounded-full"
-      src={imageSrc}
-      alt={
-        typeof imageAlt === "string"
-          ? imageAlt
-          : typeof title === "string"
-          ? title
-          : ""
-      }
-      width={290}
-      height={168}
-    />
-  </div>
-) : (
-  <div className="w-72.5 h-42">
-    <Image
-      src={imageSrc}
-      alt={
-        typeof imageAlt === "string"
-          ? imageAlt
-          : typeof title === "string"
-          ? title
-          : ""
-      }
-      width={290}
-      height={168}
-    />
-  </div>
-)}
+      {bgColor === "black" ? (
+        <AvatarGroup />
+      ) : bgColor === "#C8FF4B" ? (
+        <div className="w-72.5 h-42 overflow-hidden rounded-full">
+          <Image
+            className="rounded-full"
+            src={imageSrc}
+            alt={
+              typeof imageAlt === "string"
+                ? imageAlt
+                : typeof title === "string"
+                ? title
+                : ""
+            }
+            width={290}
+            height={168}
+          />
+        </div>
+      ) : (
+        <div className="w-72.5 h-42">
+          <Image
+            src={imageSrc}
+            alt={
+              typeof imageAlt === "string"
+                ? imageAlt
+                : typeof title === "string"
+                ? title
+                : ""
+            }
+            width={290}
+            height={168}
+          />
+        </div>
+      )}
+</div>
 
     </div>
   );
